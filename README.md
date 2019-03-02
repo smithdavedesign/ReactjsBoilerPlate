@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+///////remember !!!!!
+///////////////////////////////////////
+<div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+      
+      /////is equivalent to this with JSX
+      
+      return React.createElement('div', {className: 'shopping-list'},
+  React.createElement('h1', /* ... h1 children ... */),
+  React.createElement('ul', /* ... ul children ... */)
+);
+//////////////////////////////////////////////
 ## Available Scripts
 
 In the project directory, you can run:
